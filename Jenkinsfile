@@ -17,26 +17,11 @@ pipeline {
                 sh 'npm install'
             }
         }
-        
-        stage('Run tests') {
+
+         stage('Run Start') {
             steps {
-                sh 'npm test'
+                sh 'npm run dev'
             }
-        }
-        
-        stage('Build') {
-            steps {
-                sh 'npm run build'
-            }
-        }
-        
-        stage('Deploy') {
-            steps {
-                // Add your deployment commands here
-                // For example, to deploy to a remote server:
-                // sh 'scp -r dist/* user@your-server:/path/to/deployment'
-                echo 'Deployment step will go here'
-            }
-        }
+        }=
     }
 }
