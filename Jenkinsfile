@@ -22,6 +22,6 @@ pipeline {
             steps {
                 sh 'npm run dev'
             }
-        }=
+        }
     }
 }
