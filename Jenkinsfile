@@ -1,4 +1,5 @@
 pipeline {
+    echo "Application Process Started...."
     agent any
     
     tools {
@@ -24,4 +25,6 @@ pipeline {
             }
         }
     }
+
+    echo "Application Process Completed...."
 }
